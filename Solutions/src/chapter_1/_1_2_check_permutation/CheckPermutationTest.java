@@ -4,10 +4,13 @@ public class CheckPermutationTest {
     public static void main(String[] args) {
         CheckPermutation object = new CheckPermutation();
         boolean result;
-        String subj = "quepedo";
-        String base = "pedoque";
-        result = object.bruteForce(subj,base);
+        String str = "abcdefg";
+        String base = "abcdefh";
+        result = object.bruteForce(str,base);
 
+        System.out.println(result);
+
+        result = object.optimalSolution(str, base);
         System.out.println(result);
     }
 }
